@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100vh; 
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+}
+body{
+  background-color: #0d1117;
+}
+.bg-NavBar{
+  display: flex;
+  align-items: center;
+  background-color: #161b22;
+  height: 56px;
+  
+  
+}
+
+.collapse-contain{
+  display: flex;
+  z-index: 999;
+  align-items: center;
+  padding: 0 20px 0px 30px;
+  width: 100%;
+  justify-content: space-between;
+ 
+}
+
+.left-contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.gitHubLogo{
+  position: relative;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: relative; 
+}
+.gitHubLogo svg{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer; 
+}
+
+.gitHubLogo svg:hover{
+    background-color: #1c222b;
+}
+
+.input{
+  height: 24px;
+  width: 200px;
+  background-color: #0d1117;
+  outline: none;
+  border: 1px solid #3d3e41;
+  border-radius: 4px;
+  color: rgb(240, 227, 227);
+  transition: all 0.4s;
+  margin-left: 5px;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.sm-md-hidden a:hover{
+  color: #777a85;
+
+}
+.input::placeholder{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #ffffff;
+}
+.input:focus{
+  width: 450px;
+  background-color: #161b22;
+  border: 1px solid #3d3e41;
+}
+.left-contain a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #eaebec;
+  font-weight: bold;
+  transition: 200ms;
+  word-wrap: break-word;
+}
+
+.right-contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 10px; 
+  
+}
+.right-contain .bell{
+  color: white;
+  cursor: pointer;
+  transition: 200ms;
+
+}
+.right-contain .bell:hover{
+  color: #747474;
+  cursor: pointer;
+}
+.right-contain .plus-tri{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  position: relative;
+  right: 5px;
+  cursor: pointer;
+  transition: 1300ms;
+}
+
+.right-contain .triangle svg{
+  position: relative;
+  top: 2px;
+  transform: rotate(180deg);
+  
+  
+}
+.right-contain .plus-tri .btn:hover svg{
+  fill: #747474;
+  transition: 200ms all;
+}
+
+.btn{
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+.btn:hover{
+  background-color: inherit;
+  width: max-content;
+}
+.btn:focus{
+  background-color: none;
+  border: none;
+  outline: none;
+ 
+}
+
+.dropdown-menu{
+  background-color: #161b22;
+  position: relative;
+  color: rgb(255, 0, 0);
+  height: fit-content;
+  border: 1px solid gray;
+
+ 
+  
+}
+.dropdown-menu  li{
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: 200ms;
+ 
+}
+.dropdown-menu li a{
+  text-decoration: none;
+  color: #ebeef3;
+ 
+}
+.dropdown-menu li:hover{
+  color: white;
+  background-color: rgb(38, 139, 255);
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.left-contain{
+  width: 100%;
+}
+  
+}
+@media only screen and (max-width: 1000px) {
+  .input:focus{
+    width: 290px;
+    background-color: #161b22;
+    border: 1px solid #3d3e41;
+  }
+  }
+  
